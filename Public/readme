@@ -1,0 +1,10 @@
+General description:
+This is a web application for a local restaurant called Alexander Keith’s in Halifax. The website provides basic information about the restaurant in terms of the story, beer/food and pictures. Also, it supports reservation service at the bottom of website.
+
+Applied technologies:
+Front end(HTML and CSS). 
+Back end(Node, Express and MongoDB). 
+Platform: AWS (This application can be posted on AWS EC2s for public access but considering about the price, it is right now a local version.)
+
+Future work:
+For the app button in the navigation bar, there is no responding mobile app for downloading. It will be finished in the future.

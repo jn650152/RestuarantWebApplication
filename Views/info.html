@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>web page</title>
+		<meta name ="author" content ="jluo">
+		<link rel="stylesheet" href="info_style.css" type ="text/css"/>
+		<script>
+			//console.log("test");
+			function hint(){
+				alert("Welcome to reservation page. Your information will be protected.");
+			}
+			function submit(){
+				if(confirm("are you sure?"))
+				{
+					alert("reservation is successful");
+					document.location.href="file:///Applications/Google%20Drive/web/javascript/brewery_tour/brewery_tour.html#";
+				}
+			}
+		</script>
+	
+
+	</head>
+
+	<body onload ="hint()" class="body" ><!--onload ="the_timer=setInterval(do_something,1)"-->
+		<h1>Please enter your details for brewery tour reservation</h1>
+		<!--level 1 header-->
+		<form method="post", action = "http://localhost:3000/process/createReservation">
+			<fieldset>
+				<legend>Your General Details</legend><br>
+				<label for ="Name">Name:</label>
+				<input type ="text" id ="Name" name ="Name" value="Your full name"><br><br>
+				<label for ="Gender">Gender:</label>
+				<input type="radio" name="Gender" value="Male"> Male
+				<input type="radio" name="Gender" value="Female"> Female  
+				<br><br>
+				<label for ="Age">Age:</label>
+				<input type ="number" min ="0" max="100" step="1"id ="Age" name ="Age" value="18"><br><br>
+				<label for ="Date">Date of birth:</label>
+				<input type ="date" id ="DateOfBirth" name ="DateOfBirth"><br><br>
+				<label for = "Country">country:</label>
+				<select id = "Country" name ="Country">
+					<option value = "Canada">Canada</option>
+					<option value = "China">China</option>
+					<option value = "America">America</option>
+					<option value = "Korea">Korea</option>
+					<option value = "Japenese">Japenese</option>
+					<option value = "Others">Others</option>
+				</select>
+				<br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>reservation</legend><br>
+				<label for ="Date">Reservation date:</label>
+				<input type ="date" id ="ReservationDate" name ="ReservationDate"><br><br>
+				<label for="time">Time:</label>
+				<select id = "time" name ="time">
+					<option value = "0">12:00-13:00</option>
+					<option value = "1">13:00-14:00</option>
+					<option value = "2">14:00-15:00</option>
+					<option value = "3">15:00-16:00</option>
+					<option value = "4">16:00-17:00</option>
+					<option value = "5">17:00-18:00</option>
+					<option value = "6">18:00-19:00</option>
+					<option value = "7">19:00-20:00</option>
+				</select><br><br>
+				<label for ="people">people:</label>
+				<input type ="number" min ="0" max="10" step="1"id ="people" name ="people" value="1"><br><br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>contact info</legend><br>
+				<label for ="Email">Email:</label>
+				<input type ="text" id ="Email" name ="Email", value = "">
+				<label >(optional)</label><br><br>
+				<label for ="Wechat">Wechat:</label>
+				<input type ="text" id ="Wechat" name ="Wechat", value = "">
+				<label >(optional)</label><br><br>
+				<label for ="Facebook">Facebook:</label>
+				<input type ="text" id ="Facebook" name ="Facebook", value = "">
+				<label >(required)</label><br><br>
+				<label for ="contact"> Primary method to contact you:</label>
+				<input type ="checkbox" id ="Contact" name = "Contact" value ="emailContact">Email
+				<input type ="checkbox" id ="Contact" name = "Contact" value ="wechatContact">Wechat
+				<input type ="checkbox" id ="Contact" name = "Contact" value ="facebookContact">Facebook<br>
+			</fieldset>
+			<br>	
+				<input type = "submit" value = "Submit">
+		</form>
+	</body>
+
+</html>

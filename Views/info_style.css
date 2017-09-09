@@ -1,0 +1,11 @@
+body{
+	background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+	background-size:cover;
+	color:white;
+	font_size:87.5%;
+	font-family:Arial,'Lucida Sans Unicode';
+	line-height:1.5;
+	text-align:left;
+	
+}
