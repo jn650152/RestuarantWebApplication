@@ -1,5 +1,8 @@
 General description:
-This is a web application for a local restaurant called Alexander Keith’s in Halifax. The website provides basic information about the restaurant in terms of the story, beer/food and pictures. Also, it supports reservation service at the bottom of website.
+This is a web application for a local restaurant called Alexander Keith’s in Halifax. 
+The website provides basic information about the restaurant in terms of the story, beer/food, pictures, location and open hour.
+Also, it supports reservation service at the bottom of website.
+Furtherfore, as the size of the window changes, the layout of the webpage( http://localhost:3000/brewery_tour.html) will adjust as well. 
 
 Applied technologies:
 Front end(HTML and CSS). 
